@@ -42,13 +42,13 @@ permissions:
 jobs:
   bot-runner:
     runs-on: ubuntu-latest
-    timeout-minutes: 355  # restart just before GitHub limit
+    timeout-minutes: 355 # restart just before GitHub limit
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v5.3.0
 
-       - name: Setup Python
+      - name: Setup Python
         uses: actions/setup-python@v5.4.0
         with:
           python-version: '3.11'
