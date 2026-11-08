@@ -41,7 +41,7 @@ permissions:
 
 jobs:
   bot-runner:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 355 # restart just before GitHub limit
 
     steps:
